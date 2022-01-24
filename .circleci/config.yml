@@ -11,6 +11,7 @@ jobs:
     steps:
       - node/install
       - checkout
+      - aws-cli/setup
       # install dependencies in both apps
       - run:
           name: Font-End-Install
@@ -29,3 +30,8 @@ jobs:
           name: Back-End-Install
           command: |
             npm run backend:build
+      # deploy the front end     
+      - run:
+          name: Deploy App
+          command: |
+            npm run frontend:deploy      
