@@ -21,7 +21,7 @@ body, .app {
 
 .close-create-contact {
   display: block;
-  width: 60px;
+  width: 61px;
   height: 60px;
   background-image: url('./icons/arrow-back.svg');
   background-position: center;
